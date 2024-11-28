@@ -11,13 +11,10 @@ import java.util.Scanner;
 // - searchFor - integer value to search for
 // Return Value:
 // - When match is found, index is returned, otherwise -1 is returned
-public static int linearSearch(int[] searchArray, int searchFor)
-{
-	for (int index = 0; index < searchArray.length; index++)
-	{
+public static int linearSearch(int[] searchArray, int searchFor) {
+	for (int index = 0; index < searchArray.length; index++) {
 		// if found
-		if (searchFor == searchArray[index]) 
-		{
+		if (searchFor == searchArray[index]) {
 	      		return index;
 	    	} // end if
 	} // end for
@@ -37,21 +34,18 @@ static void main(String[] args)
 	  int userValue = userInput.nextInt();
 	  
 	  // populate array with random values
-	  for (int i = 0; i < arrayToCheck.length; i++) 
-	  {
+	  for (int i = 0; i < arrayToCheck.length; i++) {
 		  arrayToCheck[i] = (int)(Math.random() * 100);
 	  } // end of for
 	
-	  // perform LinearSearch
+	  // perform linear search
 	  int foundResult = linearSearch(arrayToCheck, userValue);
 
 	  // display results
-	  if (foundResult != -1) 
-	  {
+	  if (foundResult != -1) {
 		System.out.println(userValue + " was found at location " + foundResult);
 	  }
-	  else
-	  {
+	  else {
 		System.out.println(userValue + " was not found in the array");			
 	  }
 
