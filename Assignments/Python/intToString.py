@@ -7,7 +7,7 @@ def intToString(integer, base):
     
     # while integer is not 0
     while integer:
-    # start consuming the integer and get the remainder
+        # start consuming the integer and get the remainder
         integer, remainder = divmod(integer, numBase)
         # lookup the remainder inside the base
         returnStr.append(base[remainder])
