@@ -1,16 +1,24 @@
-# simple example of a Linear Search from a random array
+// simple example of a linear search through an array
 
 import java.util.Scanner;
 
-// function: Linear Search
-public static int linearSearch(int[] haystack, int needle)
+// Function Description:
+// - performs linear search through an array
+// - start at the beginning and search one index at a time 
+// - use for unsorted arrays, hopefully small arrays
+// Arguments:
+// - searchArray - integer array to search through
+// - searchFor - integer value to search for
+// Return Value:
+// - When match is found, index is returned, otherwise -1 is returned
+public static int linearSearch(int[] searchArray, int searchFor)
 {
-	for (int i = 0; i < haystack.length; i++)
+	for (int index = 0; index < searchArray.length; index++)
 	{
 		// if found
-		if (needle == haystack[i]) 
+		if (searchFor == searchArray[index]) 
 		{
-	      		return i;
+	      		return index;
 	    	} // end if
 	} // end for
 	// otherwise
