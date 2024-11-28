@@ -1,14 +1,12 @@
 # y86-64 code that assigns values to registers that are not the stack or base pointers
 # then call into main and make register changes to observe the register behavior
 
-
-
 .pos 0
 # init label
 Label_Init:
-    irmovq Label_Stack, %rbp
-    irmovq Label_Stack, %rsp
-    jmp Label_Main
+	irmovq Label_Stack, %rbp
+	irmovq Label_Stack, %rsp
+    	jmp Label_Main
 	.pos 0x100
 # stack label
 Label_Stack:
@@ -19,8 +17,8 @@ Label_Function:
    	ret
 # main label
 Label_Main:
-    brk
-    irmovq $13, %r12 # register #1 set to value
-    irmovq $13, %rbx # register #2 set to same value
-    call Label_Function
-    halt
+    	brk
+   	irmovq $13, %r12 # register #1 set to value
+    	irmovq $13, %rbx # register #2 set to same value
+    	call Label_Function
+    	halt
