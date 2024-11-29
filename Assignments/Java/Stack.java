@@ -20,17 +20,16 @@ public class Stack {
 		System.out.println ("Top value = " + betterStack.peek());
 			
 		// empty stack
-        while(!betterStack.isEmpty()) {
-            System.out.println("Popped value = " + betterStack.pop());
-        }		
+	        while(!betterStack.isEmpty()) {
+		        System.out.println("Popped value = " + betterStack.pop());
+	        }		
 				
 		// using isEmpty method
 		if (betterStack.isEmpty()) {
-		    System.out.println ("Stack is empty");
+			System.out.println ("Stack is empty");
 		}
 		else {
-		    System.out.println ("Stack is not empty");			
+			System.out.println ("Stack is not empty");			
 		}
-		
 	}	
 }
