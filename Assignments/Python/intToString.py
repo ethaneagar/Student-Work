@@ -1,6 +1,6 @@
 
-# function: intToString 
-def intToString(integer, base):
+# function: int_to_string 
+def int_to_string(integer, base):
     # function: string representation of a number
     returnStr = []
     numBase = len(base)
@@ -17,6 +17,6 @@ def intToString(integer, base):
         return ''.join(returnStr)
 
   # test function
-  expectEqual(intToString(1230,base10), '123O')
-  expectEqual(intToString(31337,base10), '31337')
-  expectEqual(intToString(123,base2), 'llllOll')
+  expectEqual(int_to_string(1230,base10), '123O')
+  expectEqual(int_to_string(31337,base10), '31337')
+  expectEqual(int_to_string(123,base2), 'llllOll')
