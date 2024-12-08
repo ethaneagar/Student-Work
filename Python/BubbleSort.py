@@ -5,7 +5,7 @@ import numpy
 # - performs bubble sort on an array
 # - smallest values bubble to the top, largest values sink to the bottom
 # Arguments:
-# - unsortedArray - integer array to sort
+# - unsorted_array - integer array to sort
 # Return Value:
 # - array passed by reference
 def bubble_sort(unsorted_array):
