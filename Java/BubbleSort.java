@@ -18,9 +18,9 @@ public class BubbleSort {
 			for (int comparisons = 0; comparisons < unsortedArray.length - pass; comparisons++) { 	
 				// swap if out of order
 				if (unsortedArray[comparisons] > unsortedArray[comparisons+1]) {
-		                       int temp = unsortedArray[comparisons];
+		                       int swapItem = unsortedArray[comparisons];
 		                       unsortedArray[comparisons] = unsortedArray[comparisons+1];
-		                       unsortedArray[comparisons+1] = temp;
+		                       unsortedArray[comparisons+1] = swapItem;
 	                  	} // end if out of order
 	            	} // for each comparison
 		} // for each pass
