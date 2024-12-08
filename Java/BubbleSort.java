@@ -13,27 +13,27 @@ public class BubbleSort {
 	// - array passed by reference
 	public static void bubbleSort(int[] unsortedArray) {
 		// outer loop controlling the number of sort passes
-		for (int pass = 1; pass < unsortedArray.length; pass++) {
+		for (int arrayItem = 1; arrayItem < unsortedArray.length; arrayItem++) {
 			// inner loop controlling the number of comparisons 
-			for (int comparisons = 0; comparisons < unsortedArray.length - pass; comparisons++) { 	
+			for (int compareItem = 0; compareItem < unsortedArray.length - arrayItem; compareItem++) { 	
 				// swap if out of order
-				if (unsortedArray[comparisons] > unsortedArray[comparisons+1]) {
-		                       int swapItem = unsortedArray[comparisons];
-		                       unsortedArray[comparisons] = unsortedArray[comparisons+1];
-		                       unsortedArray[comparisons+1] = swapItem;
+				if (unsortedArray[compareItem] > unsortedArray[compareItem+1]) {
+		                       int swapItem = unsortedArray[compareItem];
+		                       unsortedArray[compareItem] = unsortedArray[compareItem+1];
+		                       unsortedArray[compareItem+1] = swapItem;
 	                  	} // end if out of order
-	            	} // for each comparison
-		} // for each pass
-	} 
+	            	} // end for each comparison
+		} // end for each array item
+	} // bubble sort
 	
 	// main entry point
 	public static void main(String[] args) {
 		int[] arrayToSort = new int[20];
 	      
 		// populate array with random values
-		for (int i = 0; i < arrayToSort.length; i++) 
+		for (int index = 0; index < arrayToSort.length; index++) 
 		{
-			arrayToSort[i] = (int)(Math.random() * 100);
+			arrayToSort[index] = (int)(Math.random() * 100);
 		} // end of for	
 	        
 		System.out.println("Array prior to sort: ");	
