@@ -1,4 +1,13 @@
 # Student-Work
-Collection of code written during my studies
+This code repository is a collection of code written during my studies
+---
+Including 
++ C#
++ C++
++ C
++ Java
++ Python
++ VB.NET (Visual Basic)
++ y_86_64 (Assembly)
 
-Including C, C++, C#, Python, Java, Assembly y86-64, Visual Basic
+
