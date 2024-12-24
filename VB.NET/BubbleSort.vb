@@ -40,7 +40,7 @@ Module Program
 
         Console.WriteLine(vbCrLf & "Array prior to sort: ")
         strOutput = ""
-        'output bubble sorted array
+        'output unsorted array
         For index = 0 To arrToSort.Length - 1
             strOutput = strOutput & arrToSort(index) & " "
         Next ' end of for
@@ -51,7 +51,7 @@ Module Program
 
         Console.WriteLine(vbCrLf & "Array after sort: ")
         strOutput = ""
-        'output bubble sorted array
+        'output sorted array
         For index = 0 To arrToSort.Length - 1
             strOutput = strOutput & arrToSort(index) & " "
         Next
