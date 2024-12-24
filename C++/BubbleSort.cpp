@@ -4,16 +4,14 @@
 using namespace std;
 
 // Function Description:
-	// - performs bubble sort on an array
-	// - smallest values bubble to the top, largest values sink to the bottom
-	// Arguments:
-	// - unsortedArray - integer array to sort
-	// Return Value:
-	// - array passed by reference
-void bubbleSort(int* unsortedArray) {
-
-	int unsortedSize = sizeof(unsortedArray) / sizeof(unsortedArray[0]);
-
+// - performs bubble sort on an array
+// - smallest values bubble to the top, largest values sink to the bottom
+// Arguments:
+// - unsortedArray - integer array to sort
+// - unsortedSize - size_t length of the array
+// Return Value:
+// - array passed by reference
+void bubbleSort(int* unsortedArray, size_t unsortedSize) {
 	// outer loop controlling the number of sort passes
 	for (int arrayItem = 1; arrayItem < unsortedSize; arrayItem++) {
 		// inner loop controlling the number of comparisons 
@@ -42,16 +40,16 @@ int main() {
 	std::cout << "Array prior to sort: \n";
 	for (int index = 0; index < arraySize; index++)
 	{
-		std::cout << arrayToSort[index];
+		std::cout << arrayToSort[index] << " ";
 	}
 
 	// perform bubble sort
-	bubbleSort(arrayToSort);
+	bubbleSort(arrayToSort, arraySize);
 
 	std::cout << "\n\nArray after sort: \n";
 	for (int index = 0; index < arraySize; index++)
 	{
-		std::cout << arrayToSort[index];
+		std::cout << arrayToSort[index] << " ";
 	}
 
 	std::cout << "\n";
