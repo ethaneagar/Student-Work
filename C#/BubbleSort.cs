@@ -1,3 +1,5 @@
+// simple example of a bubble sort on an array
+
 using System;
 
 namespace Sorting
