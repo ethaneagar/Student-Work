@@ -11,7 +11,7 @@ using namespace std;
 // - unsortedSize - size_t length of the array
 // Return Value:
 // - array passed by reference
-void bubbleSort(int* unsortedArray, size_t unsortedSize) {
+static void bubbleSort(int* unsortedArray, size_t unsortedSize) {
 	// outer loop controlling the number of sort passes
 	for (int arrayItem = 1; arrayItem < unsortedSize; arrayItem++) {
 		// inner loop controlling the number of comparisons 
@@ -28,7 +28,7 @@ void bubbleSort(int* unsortedArray, size_t unsortedSize) {
 
 // main entry point
 int main() {
-	int arrayToSort[20];
+	int arrayToSort[20] = { 0 };
 	int arraySize = sizeof(arrayToSort) / sizeof(arrayToSort[0]);
 
 	// populate array with random values
