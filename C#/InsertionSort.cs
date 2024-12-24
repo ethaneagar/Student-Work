@@ -1,3 +1,5 @@
+// simple example of an insertion sort on an array
+
 using System;
 
 namespace Sorting
