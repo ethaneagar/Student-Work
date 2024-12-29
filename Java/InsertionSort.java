@@ -52,3 +52,4 @@ public class InsertionSort {
 		System.out.println("Array after sort: ");
 		System.out.println(Arrays.toString(arrayToSort));
 	} // main	
+}
